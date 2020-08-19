@@ -1,6 +1,8 @@
-const a = 5;
+const a = function() {
+    return 5;
+};
 
-function conflictions() {
-    return a + 5;
+function conflictions(b) {
+    return a() + b;
 }
 
